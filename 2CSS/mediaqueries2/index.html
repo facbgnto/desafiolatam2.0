@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/6b8f0c7049.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Electric Car Store</title>
+</head>
+
+<body>
+    <section class="container-grid">
+
+        <header class="header">
+            <div class="profile">
+                <div class="icons">
+                    <div class="auto">
+                        <i class='bx bxs-car bx-md'></i>
+                    </div>
+                    <div class="rayo">
+                        <i class='bx bxs-zap bx-xs bx-rotate-90'></i>
+                    </div>
+                </div>
+                <div class="titulo">
+                    <h3 class="named">Electric Cars</h3>
+                </div>
+            </div>
+        </header>
+        <!--Top menu -->
+        <div class="burger">
+            <div class="hamburger">
+                <button class="btn" onclick="myFunction()">
+                    <i class="fas fa-bars fa-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="menu-burger" class="sidebar">
+            <!--menu item-->
+            <ul class="menu">
+                <li><a class="item" href="#inicio">Inicio</a></li>
+                <li><a class="item" href="#catalogo">Catálogo </a></li>
+                <li><a class="item" href="#ofertas">Ofertas</a></li>
+                <li><a class="item" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <!--Selector-->
+        <div class="selector">
+           <div>
+                <h4>Ordenar Por :</h4>
+           </div>
+            <div class="s-1">
+                <select class="selecttor" name="select">
+                    <option value="value1" selected>Precio</option>
+                    <option value="value2">Alfabetico</option>
+                    <option value="value3">Destacado</option>
+                </select>
+            </div>
+        </div>
+        <!--cards-->
+        <main id="catalogo" class="main">
+            <div id="one" class=" item1 grid-items">
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img class="image" src="assets/img/car.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Model City Car</h3>
+
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+
+            </div>
+            <div id="two" class=" item2 grid-items">
+                <div class="tarjeta">
+                    <div class="  imagen">
+                        <img class="image" src="assets/img/car.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Model City Car</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+            </div>
+            <div id="three" class="grid-items">
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img class="image" src="assets/img/car.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Model City Car</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+            </div>
+            <div id="four" class="grid-items">
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img class="image" src="assets/img/car.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Model City Car</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+            </div>
+            <div id="five" class="grid-items">
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img class="image" src="assets/img/car.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Model City Car</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+
+            </div>
+            <div id="six" class="grid-items">
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img class="image" src="assets/img/car.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Model City Car</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+
+            </div>
+            <div id="seven" class="grid-items">
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img class="image" src="assets/img/car.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Model City Car</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+
+            </div>
+            <div id="eight" class="grid-items">
+                <div class="tarjeta">
+                    <div class="imagen">
+                        <img class="image" src="assets/img/car.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Model City Car</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+            </div>
+        </main>
+        <!--paginacion-->
+        <div class="paginacion">
+            <ul class="pagination">
+                <li><a href="#">«</a></li>
+                <li><a href="#one">1</a></li>
+                <li><a href="#two">2</a></li>
+                <li><a href="#three">3</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <div class="icons2">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="copyright">
+                <p>Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </section>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

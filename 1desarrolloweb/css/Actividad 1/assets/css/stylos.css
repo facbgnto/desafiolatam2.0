@@ -1,0 +1,27 @@
+body {
+   background-color: #fff ;
+}
+
+table{
+width: 50%;
+margin: auto;
+
+}
+
+table, th td{
+   border: solid 10px #ccc;
+   border-collapse: collapse;
+}
+thead{
+   background-color: cornflowerblue;
+   color: white;
+   font-weight: 800;
+}
+
+td{
+   text-align: center;
+}
+
+th{
+   padding: 0.5em;
+}
