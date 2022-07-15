@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/stilo.css">
+    <script src="https://kit.fontawesome.com/251adec713.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./assets/img/tux.jpg">
+    <title></title>
+</head>
+<body>
+    <header class="header w-100">
+        <nav class="navbar navbar-expand-md px-3 navbar-dark d-flex justify-content-betwwen bg-dark">
+          <!-- white logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/tux.png" alt="" width="30"  class="d-inline-block align-text-top">
+            Felipe Cruz 
+          </a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+            <div class="navbar-nav ms-3">
+              <a class="nav-link active " aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled">Disabled</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+<!-- Tarjetas -->
+    <div class="container-fluid">
+        <div class="row p-3 justify-content-center">
+            <div class="col-12 col-md-4 p-3 ">
+                <article class="card text-white bg-dark style="width: 15rem; ">
+                  <div class="card-header p-0">
+                    <img src="./assets/img/note.png" alt="plumón coral" class="card-img-top h-100 w-100">
+                  </div>
+                  <div class="card-body opacity-25">
+                    <h3 class="card-title fs-1 text-center">Notebook Gamer Asus</h3>
+                    <div class="input-group mb-3">
+                      <input type="number" id="cantidad" class="form-control" placeholder="Cantidad" aria-label="Cantidad" aria-describedby="basic-addon1">
+                      
+                    </div>
+                    <div class="input-group mb-3">
+                      <input type="text" id="color" class="form-control" placeholder="Color" aria-label="Color" aria-describedby="basic-addon1">
+                      
+                    </div>
+                    <div class="precio mb-3 text-center">
+                     <p class="card-text">Precio:   </p>  <span id="precio">400000</span> 
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button type="button" id="botton" class="btn btn-secondary btn-lg" onclick="    
+                      btnactivo()
+                      
+                     
+                      " >Calcular</button>
+                  </div>
+                </article>
+            </div>    
+            <div class="col-12 col-md-2" style="margin: auto 0 6rem 0;">
+              <div class="card bg-secondary text-white  align-items-center " style="width: 15rem;">
+                <div class="card-body">
+                 
+                  <h5 class="Total">Total: <span id="total"></span></h5>
+                  <h5 class="Cantidad" >Cantidad: <span id="totalCantidad"></span></h5>
+                  <h5 class="card-title">Color:</h5>
+                  <div class="circulo"></div>
+                       
+                </div>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </div>     
+     <footer>
+         <div class="text-center p-4">
+             <img src="./assets/img/logo-black.png" alt="">
+             <p>© 2022 FaCbGnTo. Todos los derechos Reservado.</p>
+         </div>
+     </footer>
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>
