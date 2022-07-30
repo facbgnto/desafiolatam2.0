@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/stilo.css">
+  <script src="https://kit.fontawesome.com/251adec713.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="icon" type="image/png" href="./assets/img/tux.png">
+  <title></title>
+</head>
+
+<body>
+  <header class="header w-100">
+    <nav class="navbar navbar-expand-md px-3 navbar-dark d-flex justify-content-betwwen bg-dark">
+      <!-- white logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/tux.png" alt="" width="30" class="d-inline-block align-text-top">
+        Felipe Cruz
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+        <div class="navbar-nav ms-3">
+          <a class="nav-link active " aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled">Disabled</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+ 
+<!-- titulo -->
+<br>
+  <div  class="container flex-column bg-dark rounded align-items-center p-3">
+    <div class="d-flex flex-column align-items-center">
+      <h1>Desafío 2 - Condiciones</h1>
+    </div>
+</div>
+<!-- Fin Titulo -->
+<!-- Actividad 1 -->
+<br>
+
+<div  class="container flex-column bg-dark  p-1 rounded">
+<div class="d-flex flex-column align-items-center">
+  <div class="parrafo1 text-center  "></div>
+  <br>
+        <h3>Desafío Parte 1: Total (2 puntos)</h3>
+        <p> Se debe construir una página con una única imagen, al hacerle click a la imagen se le debe
+          agregar un borde rojo de 2 pixeles, al hacerle click nuevamente se le debe quitar el borde.
+          Requerimientos</p>
+
+        <li>Agregar borde con el click (1 punto)</li>
+        <li> Si tiene borde, quitarle el borde con el click (1 punto)</li>
+  </div>
+
+  <div class="container-fluid text-center">
+
+    <img id="tux" src="./assets/img/tux.png" alt="#" onclick="
+
+      img = document.querySelector('#tux');
+
+
+      if(img.style.border == '10px dashed red'){
+        img.style.border = '0';
+      }else {
+        img.style.border = '10px dashed red';
+      }
+      ">
+ </div>
+  </div>
+</div>
+<br>
+<!-- Fin Actividad 1 -->
+
+<!-- Actividad 2 -->
+
+      <div  class="container flex-column bg-dark rounded p-2">
+      <div class="d-flex flex-column align-items-center">
+        <h3> Desafío Parte 2: Total (4 puntos)</h3>
+      <p> Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos
+        disponibles. Para eso deberá existir un input debajo de cada imagen donde el usuario podrá
+        ingresar un número. En caso de que la suma de todos los stickers seleccionados sea menor
+        o igual 10 se indicará en un párrafo nuevo la cantidad de stickers llevados. Ejemplo "llevas
+        5 stickers" en cualquier otro caso se mostrará un texto que dice "Llevas demasiados
+        stickers"</p> 
+      <p> A continuación te mostramos un ejemplo de lo descrito. </p> 
+      <br>
+          <h1>Stickers</h1>
+          <p>Puedes llevar hasta 10 stickers en total</p>
+      </div>
+      <div class="contimg row d-flex flex-row justify-content-center">
+          <div class="col-sm-6 col-md-4 mb-3 d-flex flex-column sticker gap-3">
+              <img src="assets/img/1.jpg" alt="" class="fluid img-thumbnail">
+              <div class="d-flex flex-column align-item-center p-3">
+                  <input class='numero' type="number" name="sticker2" id="s1" min="1" max="10" value="0" width="100%"> 
+              </div>                
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3 d-flex flex-column sticker gap-3">
+              <img src="assets/img/2.jpg" alt="" class="fluid img-thumbnail">
+              <div class="d-flex flex-column align-item-center p-3">
+                  <input class='numero'  type="number" name="sticker2" id="s2" min="1" max="10"  value="0" width="100%"> 
+              </div>                
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3 d-flex flex-column sticker gap-3">
+              <img src="assets/img/3.jpeg" alt="" class="fluid img-thumbnail p-2">
+              <div class="d-flex flex-column align-item-center p-3">
+                  <input  class='numero' type="number" name="sticker2" id="s3" min="1" max="10" value="0" width="100px"> 
+              </div> 
+          </div>
+      </div>
+      <div class="verificador text-center">
+          <button class="btn btn-light mb-3" onclick="verification()">Verificar</button>
+      </div>
+      <div>
+         <div>
+          <h3 class="result text-center text-black mb-3"></h3>
+         </div>
+      </div>
+</div>
+
+<!-- Fin Actividad 2 -->
+
+<!-- Actividad 3 -->
+<br>
+<div class="container flex-column bg-dark  text-center rounded p-2">
+
+  <div class="container3 d-flex flex-column align-items-center text-center">
+    <H3>Desafío Parte 3 Total (4 puntos)</H3>
+    <p>
+      Se debe construir una página con 3 select y opciones con dígitos del 1 al 9, al hacer click a
+la opción ingresar se debe verificar que el password sea 911 y en ese caso mostrar debajo
+del botón ingresar, un párrafo con el contenido "password 1 correcto", en caso de que el
+password sea 714 se debe mostrar en el párrafo "password 2 es correcto", si ingresa otro
+valor se debe mostrar "password incorrecto".</p>
+    <p>
+    A continuación te mostramos un ejemplo de lo descrito
+    </p>
+
+
+      <h1>Ingresa el password</h1>
+  </div>    
+      <div class="row d-flex flex-row justify-content-center">
+          <div class="col-sm-6 col-md-4 password ">
+              <div class="Selectors p-3 ">
+                  <select  type="number" name="num-1" id="num-1">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                  </select>
+                  <select name="num-2" id="num-2">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                  </select>
+                  <select name="num-3" id="num-3">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                  </select>
+              </div>
+              <div class="ingresar">
+                  <button class="btn btn-light" onclick="passverificar()">Ingresar</button>
+              </div>
+              <div class="p-3">
+                  <h3 id="resultado"></h3>
+              </div>
+     
+          </div>
+      </div>
+      <h4>Requerimientos</h4>
+    
+      <li> Se muestra correctamente el párrafo "password 1 correcto" al ingresar el ingresar el
+        password 911 utilizando los select y luego presionando botón con el texto ingresar (1
+        punto)</li>
+      <li> Adicionalmente se muestra correctamente el párrafo "password 2 correcto" al
+        ingresar el ingresar el password 714 utilizando los select y luego presionando botón
+        con el texto ingresar.(2 punto)</li>
+      <li>Se muestra password incorrecto al seleccionar cualquier otro password (1 punto)</li>
+      </p>
+</div>
+
+
+<!-- Fin Actividad 23 -->
+
+  <footer>
+      <div class="text-center p-4">
+        <img src="./assets/img/logo-black.png" alt="">
+        <p>© 2022 FaCbGnTo. Todos los derechos Reservado.</p>
+      </div>
+  </footer>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

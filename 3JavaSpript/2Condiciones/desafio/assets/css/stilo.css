@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Teko', sans-serif;
+    background-image: url("../img/fondo2.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    margin: auto;
+    color:aliceblue;
+}
+.parrafo1{
+    width: 100%;
+    color: azure;
+text-align: center;
+
+}
+nav .navbar-brand{
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+.formulario p{
+    color: aliceblue;
+} 
+.circuloa{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.contimg img {
+    width: 350px;
+    height: 350px;
+}
+
+footer{
+    color: azure;
+}
+footer img{
+    width: 100px;
+}
+
