@@ -1,60 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/stilo.css">
-    <script src="https://kit.fontawesome.com/251adec713.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <link rel="icon" type="image/png" href="./assets/img/tux.jpg">
-    <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/1funcion.js"></script>
-    <title>Desafio - Funciones</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/stilo.css">
+  <link rel="stylesheet" href="./assets/css/rainbow.css">
+  <script src="https://kit.fontawesome.com/251adec713.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="icon" type="image/png" href="./assets/img/tux.png">
+  <title></title>
 </head>
+
 <body>
+  <header class="header w-100">
+    <nav class="navbar navbar-expand-md px-3 navbar-dark d-flex justify-content-betwwen bg-dark">
+      <!-- white logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/tux.png" alt="" width="30" class="d-inline-block align-text-top">
+        Felipe Cruz
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+        <div class="navbar-nav ms-3">
+          <a class="nav-link active " aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled">Disabled</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <!-- <img src="./assets/img/tux.png" alt="" onclick="pintar_border('img1', 'green')" id="img1">
-  <img src="./assets/img/tux.png" alt="" onclick="pintar_border('img2', 'blue')" id="img2">
-  <img src="./assets/img/tux.png" alt="" onclick="pintar_border('img3', 'purple')" id="img3">
-  <script>
-        
-  //  pintar_rojo("red");
+  <!-- titulo -->
+  <br>
+  <div class="container flex-column bg-dark rounded align-items-center p-3">
+    <div class="d-flex flex-column align-items-center">
+     
+      <h1>Desafío 3 - Funciones</h1>
+    </div>
+  </div>
+  <!-- Fin Titulo -->
+  <!-- Actividad 1 -->
+  <br>
+  < <div class="container flex-column bg-dark rounded p-2">
+    <div class="d-flex flex-column align-items-center">
+      <br>
+      <h3>Desafío Parte 1</h3>
+      <h5>
+        <li>1. Transforma esta declaración de función a una función de expresión. El ejercicio debe
+          quedar en un archivo nombrado <a href="./assets/js/1funcion.js">`1funcion.js`</a> (1 Punto)</li>
+      </h5>
+   
 
-  </script>
+    <pre data-language="js"><code class="language-javascript">
+              function example(a, b, c){
+                return a+b+c
+                }
+              </code>
+        </pre>
 
-  <div id="green-1" style="background-color: blue;" ></div>
-  <div id="blue-1" style="background-color: blue;" ></div> 
+    <h3>Respuesta:</h3>
 
-  -->
+    <pre data-language="js"><code class="language-javascript" >
+          suma = function sumastres(a, b, c){
+            return a+b+c;
+            }
+          </code>
+      </pre>
+    </div>
+  </div>
+  </div>
+  <br>
+  <!-- Fin Actividad 1 -->
 
-  <!-- actividad de 3.1 - 3.2 - 3.3 -->
-  <div id="ele1" onclick="pintar('yellow');"> hello </div>
-
-  <script>
-    pintar();
-      function pintar(color = 'green'){
-        ele = document.getElementById("ele1");
-        console.log(color);
-        ele.style.backgroundColor = color;
-      }
-      ele = document.getElementById("ele1");
-      ele.addEventListener("click", pintar(ele));
-  </script>
-
- <!-- Fin actividad de 3.1 - 3.2 - 3.3 -->
-<br><br>
- <!-- ACtividad 4 -->
-
-
-    <div id="green_div" style="background-color: green; width: 200px; height: 200px;" ></div>
-    <div id="blue_div" style="background-color: blue; width: 200px; height: 200px;" ></div> 
-    <div id="yellow_div" style="background-color: yellow;width: 200px; height: 200px;" ></div>
-    <div id="pulple_div" style="background-color: purple; width: 200px; height: 200px;" ></div> 
-
-
+  <!-- Actividad 2 -->
+  <br>
+  <div class="container flex-column bg-dark  p-1 rounded ">
+    <div class="d-flex flex-column align-items-center">
+      <br>
+      <h3>Desafío Parte 2</h3>
+      <h5>
+        <li>2. Transforma las siguiente función a una arrow function de una línea. Este ejercicio
+          debe quedar en un archivo llamado <a href="./assets/js/2arrow.js">`2arrow.js`</a> (1 Punto)</li>
+      </h5>
     
-  <!-- fin ACtividad 4 -->
+    <pre data-language="js"><code class="language-javascript" >
+          suma = function(a, b){
+            return a + b
+            }
+              </code>
+        </pre>
+
+    <h3>Respuesta:</h3>
+
+    <pre data-language="js"><code class="language-javascript" >
+          suma = (a, b) => a + b; 
+          </code>
+      </pre>
+    </div>
+  </div>
+  </div>
+  <br>
+  <!-- Fin Actividad 2 -->
+
+  <!-- Actividad 3 -->
+  <div class="container flex-column bg-dark rounded p-2">
+    <div class="d-flex flex-column align-items-center">
+      <h3> Desafío Parte 3:</h3>
+      <h5> Se tiene como base el siguiente ejercicio que cambia el color de un elemento de HTML al hacerle click (Total:
+        3 Puntos)</h5>
+
+      <pre data-language="html">
+              <code class="language-javascript">
+                    <div id="ele1" > hello </div>
+                    <script>
+                      function pintar() {
+                        ele = document.getElementById("ele1")
+                        ele.style.backgroundColor = 'yellow'
+                      }
+                      ele = document.getElementById("ele1")
+                      ele.addEventListener("click", pintar);
+                    </script>
+                  </code>
+            </pre>
+
+      <h5> Modifica la función para que reciba el elemento clickeado de forma de no
+        tener que seleccionarlo nuevamente dentro de la función (1 Punto). Para
+        obtener el puntaje debes entregar el 3pintar.html válido funcionando en
+        conjunto con el código modificado.</h5>
+      <h3>Respuesta:</h3>
+
+
+      <pre data-language="html">
+            <code class="language-javascript">
+              <div id="ele1"> hello </div>
+                <script>
+                  function pintar(ele) {
+                    ele.style.backgroundColor = 'yellow';
+                  }
+                  ele = document.getElementById("ele1");
+                  ele.addEventListener("click", function () { pintar(ele) });                    
+                </script>
+            </code>
+            </pre>
+
+      <div class="ele2" id="ele2"> hello </div>
+      <script>
+        function pintar1(x) {
+          x.style.backgroundColor = 'yellow';
+        }
+        ele1 = document.getElementById("ele2");
+        ele1.addEventListener("click", function () { pintar1(ele2) });
+
+      </script>
+      <br>
+
+      <h5>Modifica el código anterior para poder pasarle un color como argumento a la
+        función pintar. El color debe ser verde (green) por defecto, al hacer clic en el
+        párrafo se debe pasar amarillo como color. (1 Punto). </h5>
+
+      <pre data-language="html">
+          <code class="language-javascript">
+                <div class="ele2" id="ele" > hello </div>
+                <script>
+
+                  function pintar3(x, color) {
+                    x.style.backgroundColor = color;
+                    console.log(color);
+                  }
+
+                  ele3 = document.getElementById("ele");
+                  pintar3(ele3, 'green');
+                  ele3.addEventListener("click", function () { pintar3(ele3, 'yellow') });
+
+                </script>
+          </code>
+          </pre>
+
+      <div class="ele2" id="ele3"> hello </div>
+      <script>
+
+        function pintar3(x, color) {
+          x.style.backgroundColor = color;
+          console.log(color);
+        }
+
+        ele3 = document.getElementById("ele3");
+        pintar3(ele3, 'green');
+        ele3.addEventListener("click", function () { pintar3(ele3, 'yellow') });
+
+      </script>
+      <br>
+      <h5> Separa el código en 2 archivos: 3 pintar.html y script.js. El script js debe estar
+        dentro de la carpeta assets/js (1 Punto). Para obtener el puntaje debes
+        entregar los archivos cumplimiento la estructura pedida en conjunto con los
+        requerimientos de 3.1 y 3.2</h5>
+
+      <h3>Respuesta:</h3>
+      <h4>Archivo <a href="./3pintar.html">`3pintar.html`</a> </h4>
+      <pre data-language="html">
+      <code class="language-javascript">
+             
+              <div  class="container bg-dark rounded text-white p-3 m-5">
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h4>Presiona hello para cambio de color</h4>
+                        <div class="ele" id="ele4" onclick="pintar('yellow');"> hello </div>      
+                  </div>
+              </div>
+              <script src="./assets/js/script.js"></script>
+                            
+      </code>
+      </pre>
+      <br>
+
+
+      <br>
+      <h4>Archivo <a href="./assets/js/script.js">`script.js`</a> </h4>
+      <pre data-language="html">
+      <code class="language-javascript">
+        pintar();
+        function pintar(color = 'green'){
+                    ele1 = document.getElementById("ele4");
+                    ele1.style.backgroundColor = color;
+        }
+                            
+      </code>
+      </pre>
+
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h4>Presiona hello para cambio de color</h4>
+        <div class="ele2" id="ele4" onclick="pintar('yellow');"> hello </div>
+      </div>
+
+      <br>
+    </div>
+  </div>
+
+  <!-- Fin Actividad 3 -->
+
+  <!-- Actividad 3 -->
+  <br>
+  <div class="container flex-column bg-dark  text-center rounded p-2">
+
+    <div class="container3 d-flex flex-column align-items-center text-center">
+      <H3>Desafío Parte 3 Total (4 puntos)</H3>
+      <h5>
+        Crea 4 divs que tengan alto y ancho de 200px y de distintos colores de fondo
+        usando el atributo style. Cada uno de los divs debe tener un identificador
+        único.</h5>
+      <h5>
+        Crea un script que guarde dentro de una variable global un color
+        dependiendo de la letra del teclado presionada. (2 Puntos).
+        <li> ○ Al presionar la letra a un color a tu elección.</li>
+        <li> ○Al presionar la letra s un segundo color a tu elección.</li>
+        <li> ○Al presionar la letra d un tercer color al presionar la letra d.</li>
+        <li> ○Para guardar el color revisa el tip al final del enunciado.</li>
+      </h5>
+      <h5>Dentro del script agrega el evento que al hacerle click a uno de los divs, este
+        cambie de color al color seleccionado. Utiliza addEventListener para agregar
+        el evento. </h5>
+
+
+    </div>
+
+    <div>
+      <h2>Presiona las teclas para cambiar color</h2>
+    </div>
+
+    <div class="box_teclas">
+      <div class="teclas">
+        <h3>a</h3>
+      </div>
+      <div class="teclas">
+        <h3>S</h3>
+      </div>
+      <div class="teclas">
+        <h3>d</h3>
+      </div>
+    </div>
+
+    <div class="Circulo">
+      <div id="circulo_div" style="background-color: #fff; width: 100px; height: 100px; border-radius: 100px;"></div>
+    </div>
+    <div class="cambioColor">
+      <div class="cuadrado" id="green_div" onclick="pintarCuadrado('green_div')"
+        style="background-color: green; width: 200px; height: 200px;"></div>
+      <div class="cuadrado" id="blue_div" onclick="pintarCuadrado('blue_div')"
+        style="background-color: blue; width: 200px; height: 200px;"></div>
+      <div class="cuadrado" id="yellow_div" onclick="pintarCuadrado('yellow_div')"
+        style="background-color: yellow;width: 200px; height: 200px;"></div>
+      <div class="cuadrado" id="pulple_div" onclick="pintarCuadrado('pulple_div')"
+        style="background-color: purple; width: 200px; height: 200px;"></div>
+    </div>
+  </div>
+  <!-- Fin Actividad 23 -->
+<br>
+  <footer>
+    <div class="container flex-column bg-dark rounded p-2">
+      <div class="d-flex flex-column align-items-center">
+
+        <img src="./assets/img/logo-black.png" alt="">
+        <p>© 2022 FaCbGnTo. Todos los derechos Reservado.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/rainbow-custom.min.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
