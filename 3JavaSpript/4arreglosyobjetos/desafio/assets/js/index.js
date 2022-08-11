@@ -52,7 +52,7 @@ const propiedadesJSON = [
   
   function carga(){
     spTotal = document.querySelector("#sp_Total");
-    divpropiedad = document.querySelector(".propiedad");
+    divpropiedad = document.querySelector("#propiedad");
     let html = "";
     let counter = 0;
       for(propiedad of propiedadesJSON){
@@ -75,7 +75,6 @@ const propiedadesJSON = [
     divpropiedad.innerHTML = html;
   }
   carga();
-  
 
   const btnSearch = document.querySelector("#btn_buscar");
 
@@ -84,7 +83,7 @@ const propiedadesJSON = [
     desde = document.querySelector("#desde").value;
     hasta = document.querySelector("#hasta").value;
     spTotal = document.querySelector("#sp_Total");
-    divpropiedad = document.querySelector(".propiedad");
+    divpropiedad = document.querySelector("#propiedad");
   
     let html = "";
    
