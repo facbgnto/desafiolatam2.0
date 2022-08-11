@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/stilo.css">
   <link rel="stylesheet" href="./assets/css/rainbow.css">
+  <link rel="stylesheet" href="./assets/css/stilo.css">
+
   <script src="https://kit.fontawesome.com/251adec713.js" crossorigin="anonymous"></script>
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
 
   <link rel="icon" type="image/png" href="./assets/img/tux.png">
   <title></title>
@@ -43,14 +44,13 @@
   <br>
   <div class="container flex-column bg-dark rounded align-items-center p-3">
     <div class="d-flex flex-column align-items-center">
-     
-      <h1>Desafío 3 - Funciones</h1>
+          <h1>Desafío 3 - Funciones</h1>
     </div>
   </div>
   <!-- Fin Titulo -->
   <!-- Actividad 1 -->
   <br>
-  < <div class="container flex-column bg-dark rounded p-2">
+  <div class="container flex-column bg-dark rounded p-2">
     <div class="d-flex flex-column align-items-center">
       <br>
       <h3>Desafío Parte 1</h3>
@@ -58,25 +58,24 @@
         <li>1. Transforma esta declaración de función a una función de expresión. El ejercicio debe
           quedar en un archivo nombrado <a href="./assets/js/1funcion.js">`1funcion.js`</a> (1 Punto)</li>
       </h5>
-   
+      <pre data-language="html">
+            <code class="language-javascript">
+                function example(a, b, c){
+                  return a+b+c
+                  }
+            </code>
+      </pre>
 
-    <pre data-language="js"><code class="language-javascript">
-              function example(a, b, c){
-                return a+b+c
-                }
-              </code>
-        </pre>
+      <h3>Respuesta:</h3>
 
-    <h3>Respuesta:</h3>
-
-    <pre data-language="js"><code class="language-javascript" >
-          suma = function sumastres(a, b, c){
-            return a+b+c;
-            }
+      <pre data-language="js">
+          <code class="language-javascript" >
+                suma = function sumastres(a, b, c){
+                  return a+b+c;
+                  }
           </code>
       </pre>
     </div>
-  </div>
   </div>
   <br>
   <!-- Fin Actividad 1 -->
@@ -91,23 +90,23 @@
         <li>2. Transforma las siguiente función a una arrow function de una línea. Este ejercicio
           debe quedar en un archivo llamado <a href="./assets/js/2arrow.js">`2arrow.js`</a> (1 Punto)</li>
       </h5>
-    
-    <pre data-language="js"><code class="language-javascript" >
+
+      <pre data-language="language-javascript"><code class="language-javascript" >
           suma = function(a, b){
             return a + b
             }
               </code>
-        </pre>
+      </pre>
 
-    <h3>Respuesta:</h3>
+      <h3>Respuesta:</h3>
 
-    <pre data-language="js"><code class="language-javascript" >
+      <pre data-language="language-javascript"><code class="language-javascript" >
           suma = (a, b) => a + b; 
           </code>
       </pre>
     </div>
   </div>
-  </div>
+ 
   <br>
   <!-- Fin Actividad 2 -->
 
@@ -130,7 +129,7 @@
                       ele.addEventListener("click", pintar);
                     </script>
                   </code>
-            </pre>
+      </pre>
 
       <h5> Modifica la función para que reciba el elemento clickeado de forma de no
         tener que seleccionarlo nuevamente dentro de la función (1 Punto). Para
@@ -150,17 +149,17 @@
                   ele.addEventListener("click", function () { pintar(ele) });                    
                 </script>
             </code>
-            </pre>
+      </pre>
 
       <div class="ele2" id="ele2"> hello </div>
-      <script>
-        function pintar1(x) {
-          x.style.backgroundColor = 'yellow';
-        }
-        ele1 = document.getElementById("ele2");
-        ele1.addEventListener("click", function () { pintar1(ele2) });
+        <script>
+          function pintar1(x) {
+            x.style.backgroundColor = 'yellow';
+          }
+          ele1 = document.getElementById("ele2");
+          ele1.addEventListener("click", function () { pintar1(ele2) });
 
-      </script>
+        </script>
       <br>
 
       <h5>Modifica el código anterior para poder pasarle un color como argumento a la
@@ -171,19 +170,16 @@
           <code class="language-javascript">
                 <div class="ele2" id="ele" > hello </div>
                 <script>
-
                   function pintar3(x, color) {
                     x.style.backgroundColor = color;
                     console.log(color);
                   }
-
                   ele3 = document.getElementById("ele");
                   pintar3(ele3, 'green');
                   ele3.addEventListener("click", function () { pintar3(ele3, 'yellow') });
-
                 </script>
           </code>
-          </pre>
+      </pre>
 
       <div class="ele2" id="ele3"> hello </div>
       <script>
@@ -207,17 +203,17 @@
       <h3>Respuesta:</h3>
       <h4>Archivo <a href="./3pintar.html">`3pintar.html`</a> </h4>
       <pre data-language="html">
-      <code class="language-javascript">
-             
-              <div  class="container bg-dark rounded text-white p-3 m-5">
-                  <div class="d-flex flex-column justify-content-center align-items-center">
-                        <h4>Presiona hello para cambio de color</h4>
-                        <div class="ele" id="ele4" onclick="pintar('yellow');"> hello </div>      
-                  </div>
-              </div>
-              <script src="./assets/js/script.js"></script>
-                            
-      </code>
+            <code class="language-javascript">
+                  
+                    <div  class="container bg-dark rounded text-white p-3 m-5">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                              <h4>Presiona hello para cambio de color</h4>
+                              <div class="ele" id="ele4" onclick="pintar('yellow');"> hello </div>      
+                        </div>
+                    </div>
+                    <script src="./assets/js/script.js"></script>
+                                  
+            </code>
       </pre>
       <br>
 
@@ -225,14 +221,14 @@
       <br>
       <h4>Archivo <a href="./assets/js/script.js">`script.js`</a> </h4>
       <pre data-language="html">
-      <code class="language-javascript">
-        pintar();
-        function pintar(color = 'green'){
-                    ele1 = document.getElementById("ele4");
-                    ele1.style.backgroundColor = color;
-        }
-                            
-      </code>
+          <code class="language-javascript">
+            pintar();
+            function pintar(color = 'green'){
+                        ele1 = document.getElementById("ele4");
+                        ele1.style.backgroundColor = color;
+            }
+                                
+          </code>
       </pre>
 
       <div class="d-flex flex-column justify-content-center align-items-center">
@@ -267,8 +263,6 @@
       <h5>Dentro del script agrega el evento que al hacerle click a uno de los divs, este
         cambie de color al color seleccionado. Utiliza addEventListener para agregar
         el evento. </h5>
-
-
     </div>
 
     <div>
@@ -301,8 +295,9 @@
         style="background-color: purple; width: 200px; height: 200px;"></div>
     </div>
   </div>
+</div>
   <!-- Fin Actividad 23 -->
-<br>
+  <br>
   <footer>
     <div class="container flex-column bg-dark rounded p-2">
       <div class="d-flex flex-column align-items-center">
@@ -312,7 +307,7 @@
       </div>
     </div>
   </footer>
-  <script src="/assets/js/rainbow-custom.min.js"></script>
+  <script src="./assets/js/rainbow-custom.min.js"></script>
   <script src="./assets/js/index.js"></script>
 </body>
 
