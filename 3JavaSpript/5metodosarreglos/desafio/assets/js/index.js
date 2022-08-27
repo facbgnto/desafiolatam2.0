@@ -36,27 +36,36 @@ function renderTarea(){
 }
 
 btnTarea.addEventListener('click', async () =>{
-    const tarea = newTarea.value;
-    let idcontar = ""; 
-    if(tareas.length === 0){ 
-         idcontar = 1; 
+
+    if(newTarea.value === ""){
+      
+        var notification = alertify.notify('El Campo no puede quedar en Blanco', 'success', 5, function(){  console.log('dismissed'); });
+
     }else{
-         idcontar = (tareas[tareas.length-1].id)+1; 
-    }
-    
+        console.log(newTarea.value )
 
-    console.log(idcontar);
-    console.log(tareas)
+            const tarea = newTarea.value;
+            let idcontar = ""; 
+            if(tareas.length === 0){ 
+                idcontar = 1; 
+            }else{
+                idcontar = (tareas[tareas.length-1].id)+1; 
+            }
+            
 
-    tareas.push({
-        id: idcontar,
-        nombre: tarea, 
-        completado: false
-    });
+            console.log(idcontar);
+            console.log(tareas)
 
-    newTarea.value = '';    
+            tareas.push({
+                id: idcontar,
+                nombre: tarea, 
+                completado: false
+            });
 
-    renderTarea();
+            newTarea.value = '';    
+
+            renderTarea();
+        }
 })
 
 function borrarTarea(id){
