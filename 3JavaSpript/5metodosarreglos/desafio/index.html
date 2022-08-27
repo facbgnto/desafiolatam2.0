@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/stilo.css">
+    <script src="https://kit.fontawesome.com/251adec713.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./assets/img/tux.jpg">
+    <title></title>
+</head>
+<body>
+    <header class="header w-100">
+        <nav class="navbar navbar-expand-md px-3 navbar-dark d-flex justify-content-betwwen bg-dark">
+          <!-- white logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/tux.png" alt="" width="30"  class="d-inline-block align-text-top">
+            Felipe Cruz 
+          </a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+            <div class="navbar-nav ms-3">
+              <a class="nav-link active " aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled">Disabled</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+<!-- Tarjetas -->
+    <div class="container-fluid">
+        <div class="row p-3 justify-content-center ">
+            <div class="col-12 col-md-4 p-3 bg-dark text-white  rounded">
+                  <h1 class="text-center">To Do List</h1>
+                  <div class="agregar-tarea">
+                      <input type="text" id="newTarea" placeholder="Agregar una Tarea">
+                      <i id="btnTarea" class="fas fa-plus-circle"></i>
+                  </div>
+                  <div class="detalles">
+                    <h5>Total: <span id="total">0</span></h5>
+                    <h5>Realizadas: <span id="check">0</span></h5>
+                  </div>
+                  
+                  <div class="seccion-tarea">
+                      <h5 class="text-center">Estas son tus Tareas Pendientes </h5>
+                      <ul id="lista">
+                           <li id="elemento">
+                              <p id="idTarea"></p>
+                              <p class="text">  </p>
+                              <i class="far fa-circle " data="realizado" id="0" onclick=""></i>
+                              <i class="fas fa-trash de" data="eliminado" id="borrar"></i> 
+                          </li>
+                        
+                      </ul>
+                  </div>   
+                  
+        </div>
+      </div>     
+     <footer>
+         <div class="text-center p-4">
+             <img src="./assets/img/logo-black.png" alt="">
+             <p>© 2022 FaCbGnTo. Todos los derechos Reservado.</p>
+         </div>
+     </footer>
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>
