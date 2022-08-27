@@ -23,9 +23,18 @@ btn_search.addEventListener("click", async ()  =>  {
     let resultado = await conexionApi(currency);
     let valorMoneda = parseFloat(resultado.serie[0].valor);
     let calculo = clpMonto/valorMoneda;
+    calculo = calculo.toFixed(2);
+
+    console.log(currency)
+    let signo = "";
+    if(currency == "euro"){
+        result.innerHTML = 'Resultado: € ' + calculo + " Euro";
+    }else {
+        result.innerHTML = 'Resultado: $' + calculo +' ' + currency;
+    }
+   
 
 
-    result.innerHTML = 'Resultado: ' + calculo;
 
     var xmlhttp = new XMLHttpRequest();
     var url = "https://mindicador.cl/api/" + currency;

@@ -43,6 +43,10 @@ h3{
     margin: 5px;
 }
 
+#resultado{
+    margin: 5px;
+    font-size: medium;
+}
 #conten{
     display: inline-block;
     background-color: #B2BABB  ;
