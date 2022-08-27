@@ -7,9 +7,9 @@ const borrar = document.querySelector('#borrar');
 const checkEstado = 'fa-check-circle';
 const uncheckEstado = 'fa-circle' 
 let tareas = [
-    { id: 1, nombre: "Crear Elemento",completado: false },
-    { id: 2, nombre: "Borrar Elemento",completado: false },
-    { id: 3, nombre: "Actualizar Elemento",completado: false }
+     { id: 1, nombre: "Crear Elemento",completado: false },
+     { id: 2, nombre: "Borrar Elemento",completado: false },
+     { id: 3, nombre: "Actualizar Elemento",completado: false }
 ];
 
  tareas.forEach(x => renderTarea());
@@ -37,10 +37,16 @@ function renderTarea(){
 
 btnTarea.addEventListener('click', async () =>{
     const tarea = newTarea.value;
+    let idcontar = ""; 
+    if(tareas.length === 0){ 
+         idcontar = 1; 
+    }else{
+         idcontar = (tareas[tareas.length-1].id)+1; 
+    }
     
-    const idcontar = (tareas[tareas.length-1].id)+1; 
 
-    console.log(idcontar)
+    console.log(idcontar);
+    console.log(tareas)
 
     tareas.push({
         id: idcontar,
@@ -56,7 +62,9 @@ btnTarea.addEventListener('click', async () =>{
 function borrarTarea(id){
     const index = tareas.findIndex(tareas => tareas.id  == id);
     tareas.splice(index,1);
+    console.log(tareas)
     renderTarea();
+    
 }
 
 function checkTarea(id){
