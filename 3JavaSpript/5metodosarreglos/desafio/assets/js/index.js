@@ -24,7 +24,7 @@ function renderTarea(){
         <p id="idTarea">${tarea.id}</p>
         <p class="text">  ${tarea.nombre}</p>
         <i class="far ${completado} co" data="realizado" id="borrar" onclick="checkTarea(${tarea.id});"></i>
-        <i class="fas fa-trash de" data="eliminado" onclick="borrarTarea(${tarea.id});" id="0"></i> 
+        <i class="fas fa-trash de " data="eliminado" onclick="borrarTarea(${tarea.id});" id="0"></i> 
         </li> `
     }
     const contarRealizadas = tareas.filter((tareas) => tareas.completado === true);
