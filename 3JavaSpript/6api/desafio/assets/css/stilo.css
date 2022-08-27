@@ -23,6 +23,35 @@ li{
     background-color: blue;
     border-radius: 50%;
 }
+#clpMonto{
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+   
+}
+#selector_moneda{
+    display: inline-block;
+    width: 80%;
+    margin: 10px;
+}
+
+h3{
+    display: inline-block;
+    margin: 10px;
+}
+#pMoneda{
+    margin: 5px;
+}
+
+#conten{
+    display: inline-block;
+    background-color: #B2BABB  ;
+    justify-content: center;
+    width: 250px;
+    border-radius: 10%;
+}
+
+
 footer{
     color: azure;
 }
